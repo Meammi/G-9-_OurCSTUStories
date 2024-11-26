@@ -34,7 +34,8 @@ header{
 .header-right{
     flex: 3;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 16px;
 }
 /* Header-end */
 
