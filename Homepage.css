@@ -49,13 +49,18 @@ header{
     flex-direction: column;
     flex: 1;
 }
+.homepage-text-header{
+    min-height: auto;
+    max-width: 600px;
+    padding: 2%;
+}
 .homepage-card-container{
     display: flex;
     align-items: center;
 }
 .homepage-card{
     min-width: 280px;
-    min-height: 360px;
+    min-height: 380px;
     text-align: left;
     display: flex;
     flex-direction: column;
