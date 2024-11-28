@@ -8,6 +8,7 @@
     --secondary-color: #B3C8CF;
     --accent-color: #E5E1DA;
     --text-color: #F1F0E8;
+    --text-color2: #303f4e;
     --link-color: #FFFFFF;
     --link-hover-color: #E2E2B6;
     --gradient-bg: linear-gradient(315deg, var(--secondary-color)10%,var(--primary-color)80%);
