@@ -22,6 +22,7 @@
     justify-content: center;
 }
 .homepage-card{ 
+    color : var(--texter-color2);
     min-width: 280px;
     min-height: 380px;
     text-align: left;
@@ -139,5 +140,8 @@ textarea{
 }
 .comment-rating-star{
     color: var(--link-hover-color);
+}
+header{
+    background-color: #e9f5fb;
 }
 /* <!-- Homepage-main-end --> */
