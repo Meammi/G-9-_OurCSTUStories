@@ -63,7 +63,7 @@
 }
 
 .journey-details p {
-    color: #303f4e;
+    color: var(--text-color2);
     line-height: 1.6;
     font-style: italic;
     letter-spacing: 0.2px;
