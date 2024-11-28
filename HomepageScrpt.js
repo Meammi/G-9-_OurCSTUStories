@@ -3,7 +3,33 @@ const commentsContainer = document.getElementById('homepage-comment'); // Correc
 let comments = [];
 
 //validate form
+function validateForm(name, email, rating, comment) {
+    if (name.length < 3 || name.length > 20) {
+        alert('Username must be between 3 and 20 characters.');
+        return false;
+    }
+    if (!name.match(/^[A-Za-z0-9]+$/)) {
+        alert('Name must contain only letters and numbers.');
+        return false;
+    }
 
+    if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
+        alert('Please enter a valid email address.');
+        return false;
+    }
+
+    if (!rating) {
+        alert('Please select a rating.');
+        return false;
+    }
+
+    if (comment.length < 10 || comment.length > 300) {
+        alert('Comment must be between 10 and 300 characters.');
+        return false;
+    }
+
+    return true;
+}
 
 //display star
 function generateStars(rating) {
@@ -31,13 +57,20 @@ function displayComments() {
 document.getElementById('homepage-guest-book-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
     const rating = document.querySelector('input[name="rating"]:checked')?.value || null;
     const comment = document.getElementById('comment').value.trim();
 
-    if (name && comment && email && rating) {
+    if (validateForm(name, email, rating, comment)) {
         comments.push({ name, email, rating, text: comment });
+
         displayComments();
+
         document.getElementById('homepage-guest-book-form').reset();
+
+        const submitButton = document.querySelector('.homepage-form-submit');
+        submitButton.disabled = true;
+        setTimeout(() => submitButton.disabled = false, 3000);
     }
 });
 
