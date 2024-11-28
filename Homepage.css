@@ -14,6 +14,7 @@
     min-height: auto;
     max-width: 600px;
     padding: 2%;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .homepage-card-container{
     min-width: 100%;
