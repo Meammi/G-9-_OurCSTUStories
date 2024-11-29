@@ -239,6 +239,7 @@ header{
 }
 
 .journey-text-header {
+    margin-top: 20px;
     width: 60%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
@@ -368,3 +369,159 @@ header{
     letter-spacing: 0.2px;
 }
 /* <!-- Future-End --> */
+/* <!-- Responsive-Start --> */
+/* Laptop */
+@media all and (max-width: 1024px){
+    h1{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.83rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+}
+
+@media all and (max-width: 1024px){
+    h1{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.83rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+}
+
+/* Laptop */
+@media all and (max-width: 1024px){
+    h1{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.83rem;
+    }
+    p{
+        font-size: 1rem;
+    }
+    label{
+        font-size: 1rem;
+    }
+}
+
+/* Tablet */
+@media all and (max-width: 768px){
+    h1{
+        font-size: 1.5rem;
+    }
+    h3{
+        font-size: 0.75rem;
+    }
+    h4{
+        font-size: 0.8rem;
+    }
+    p{
+        font-size: 0.75rem;
+    }
+    label{
+        font-size: 0.75rem;
+    }
+    .homepage-card-profile{
+        width: 140px;
+        height: 180px;
+    }
+    .homepage-card{
+        min-width: 200px;
+        min-height: 300px;
+        width: 200px;
+        height: 300px;
+    }
+    .homepage-card-icon{
+        width: 16px;
+        height: 16px;
+    }
+}
+/* Mobile L */
+@media all and (max-width: 425px){
+    h1{
+        font-size: 1.75rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 1rem;
+    }
+    p{
+        font-size: 0.85rem;
+    }
+    label{
+        font-size: 0.85rem;
+    }
+    header{
+        flex-direction: column;
+    }
+    .header-left img{
+        width: 160px;
+    }
+    .header-center{
+        flex-direction: column;
+        padding: 16px 0px;
+        gap: 16px;
+    }
+    .header-right img{
+        min-width: 32px;
+        min-height: 32px;
+    }
+    .homepage-card-container{
+        flex-direction: column;
+    }
+    .homepage-guest-book{
+        min-width: 300px;
+    }
+    .homepage-card{
+        flex-direction: row;
+        min-width: 100%;
+        min-height: 150px;
+        height: 200px
+    }
+    .homepage-card-content{
+        justify-content: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .homepage-card-icon{
+        width: 32px;
+        height: 32px;
+    }
+    .journey-content{
+        width: 80%;
+    }
+    .journey-section{
+        flex-direction: column;
+    }
+    .journey-image-box{
+        width: 40%;
+    }
+    .journey-details{
+        padding-left: 4%;
+        padding-right: 4%;
+    }
+}
