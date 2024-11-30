@@ -224,12 +224,6 @@ header{
 /* <!-- Homepage-end --> */
 
 /* <!-- Journey-start --> */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .journey-container {
     width: 100%;
     display: flex;
@@ -260,8 +254,6 @@ header{
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
-
-
 .journey-image-box {
     width: 20%;
     justify-content: center;
@@ -298,12 +290,6 @@ header{
 /* <!-- Journey-end --> */
 
 /* <!-- Future-start --> */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 .future-container {
     width: 100%;
     display: flex;
@@ -315,6 +301,7 @@ header{
 .future-text-header {
     width: 60%;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    padding-top: 30px;
 }
 
 .future-content {
