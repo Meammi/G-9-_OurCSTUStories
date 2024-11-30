@@ -249,8 +249,7 @@ header{
     align-items: center; 
     background-color: var(--secondary-color);
     padding: 20px;
-    margin-bottom: 20px;  
-    margin-top: 20px;
+    margin: 20px 0;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
@@ -258,8 +257,7 @@ header{
     width: 20%;
     justify-content: center;
     align-items: center;
-    margin-left: 4%;
-    margin-top: 1%;
+    margin: 1% 0 0 4%;
 }
 
 .journey-image-box img {
@@ -275,14 +273,11 @@ header{
     flex-direction: column; 
     justify-content: center; 
     height: 100%; 
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding: 4% 10%;
 }
 
 .journey-details p {
-    color: #303f4e;
+    color: var(--text-color2);
     line-height: 1.6;
     font-style: italic;
     letter-spacing: 0.2px;
@@ -315,8 +310,7 @@ header{
     align-items: center; 
     background-color: var(--secondary-color);
     padding: 20px;
-    margin-bottom: 20px;  
-    margin-top: 20px;
+    margin: 20px 0;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
 }
@@ -326,8 +320,7 @@ header{
     width: 20%;
     justify-content: center;
     align-items: center;
-    margin-left: 4%;
-    margin-top: 1%;
+    margin: 1% 0% 0% 4%;
 }
 
 .future-image-box img {
@@ -343,14 +336,11 @@ header{
     flex-direction: column; 
     justify-content: center; 
     height: 100%; 
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 4%;
-    padding-bottom: 4%;
+    padding: 4% 10%;
 }
 
 .future-details p {
-    color: #303f4e;
+    color: var(--text-color2);
     line-height: 1.6;
     font-style: italic;
     letter-spacing: 0.2px;
