@@ -269,7 +269,7 @@ header{
     margin: 0 auto 10px auto;
     background: var(--primary-color);
     color: var(--text-color);
-    font-size: x-small;
+    font-size: 0.7rem;
     position: relative;
     z-index: 2; 
 }
@@ -303,6 +303,7 @@ header{
     margin: 20px 0;
     border-radius: 50px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+    transition: all 0.3s ease;
 }
 .journey-image-box {
     width: 20%;
@@ -332,6 +333,11 @@ header{
     line-height: 1.6;
     font-style: italic;
     letter-spacing: 0.2px;
+}
+
+.journey-section:hover {
+    background-color: var(--text-color);
+    transform: scale(1.05); 
 }
 /* <!-- Journey-end --> */
 
