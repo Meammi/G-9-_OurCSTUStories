@@ -651,7 +651,7 @@ header{
     .journey-section{
         flex-direction: column;
     }
-    .journey-image-box{
+    .flip-card{
         width: 40%;
     }
     .journey-details{
