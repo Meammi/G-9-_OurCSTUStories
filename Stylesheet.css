@@ -658,4 +658,8 @@ header{
         padding-left: 4%;
         padding-right: 4%;
     }
+    .future-section-image{
+        width: 70%;
+        height: 70%;
+    }
 }
