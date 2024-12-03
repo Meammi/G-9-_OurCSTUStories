@@ -68,6 +68,29 @@ html,body{
 .transition-3.is-active {
   top: 0;
 }
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: var(--text-color);
+    color: var(--text-color2);
+    cursor: pointer;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 1.5rem;
+    font-weight: bold; 
+}
+  
+#myBtn:hover {
+    background-color: var(--text-color2);
+    color: var(--text-color);
+}
+
 /* Header-start */
 header{
     position: relative;
