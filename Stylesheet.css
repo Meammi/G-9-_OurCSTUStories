@@ -346,6 +346,7 @@ header{
 
 .journey-section {
     display: flex;
+    justify-content: space-around;
     align-items: center; 
     background-color: var(--secondary-color);
     padding: 20px;
@@ -354,19 +355,57 @@ header{
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
     transition: all 0.3s ease;
 }
-.journey-image-box {
+
+.flip-card {
     width: 20%;
+    aspect-ratio: 1 / 1; 
     justify-content: center;
     align-items: center;
     margin: 1% 0 0 4%;
 }
 
-.journey-image-box img {
+.flip-card-inner {
+    position: relative;
     width: 100%;
-    height: auto;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    backface-visibility: hidden;
     border-radius: 50%;
+    overflow: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+
+.flip-card-back {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--text-color2); /* Light background for contrast */
+    transform: rotateY(180deg);
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flip-card-back a img {
+    width: 50%; /* Adjust icon size */
+    height: 50%;
 }
 
 .journey-details {
@@ -386,7 +425,7 @@ header{
 
 .journey-section:hover {
     background-color: var(--text-color);
-    transform: scale(1.05); 
+    transform: scale(1.03); 
 }
 /* <!-- Journey-end --> */
 
